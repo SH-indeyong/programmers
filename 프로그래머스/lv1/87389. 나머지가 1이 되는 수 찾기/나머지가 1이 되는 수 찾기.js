@@ -1,6 +1,6 @@
-function solution(n) {
-    for(var i=0; i<n; i++){
-        if(n%i == 1)
+function solution(n, i=1) {
+    while(i++){
+        if(n%i === 1)
             return i;
     }
 }

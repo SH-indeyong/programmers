@@ -9,5 +9,6 @@ function solution(numbers) {
     }
     
     var result = [...new Set(answer)];
+    // Set으로 중복 제거
     return result;
 }

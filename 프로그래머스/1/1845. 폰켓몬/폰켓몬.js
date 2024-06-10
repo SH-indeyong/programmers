@@ -1,12 +1,6 @@
 function solution(nums) {
-    const types = [];
-    
-    nums.forEach(function(num) {
-        if (!(types.includes(num))) {
-            types.push(num);
-        }
-    })
-    
     const choice = nums.length / 2;
-    return choice < types.length ? choice : types.length;
+    const numSet = new Set(nums);
+    
+    return choice < numSet.size ? choice : numSet.size;
 }
